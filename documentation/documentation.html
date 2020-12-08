@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../code/assets/images/favicon.png">
+    <title>Wchat Fully Responsive PHP/AJAX Chat</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../code/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+    <link href="../code/assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="">
+<!-- Preloader -->
+<div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+</div>
+<div id="wrapper">
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Wchat Documentation</h4> </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> <a href="https://codecanyon.net/item/wchat-fully-responsive-phpajax-chat/18047319?clickthrough_id=18047319&license=regular&open_purchase_for_item_id=18047319&purchasable=source&redirect_back=true&ref=bylancer&utm_source=item_desc_link" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Buy Now</a>
+                    <ol class="breadcrumb">
+                        <li><a href="index.php">Dashboard</a></li>
+                        <li class="active">Documentation Page</li>
+                    </ol>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+
+            <!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h3 class="box-title">Introduction</h3>
+                        <p>Wchat is a popular responsive php ajax inbox messaging (Chat) WebApp for websites, mobile apps and control panels. It is a responsive chating app that is Built with PHP/MySQLI-PDO and design with CSS framework Bootstrap 3.3.6 It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for web and mobile applications. wchat is based on a modular design, which allows it to be easily customized and built upon. This documentation will guide you through installing the template and exploring the various components that are bundled with the template.</p>
+                        <hr>
+                        <p>
+                        <h3 class="box-title">Note : Integrate With Existing User Table <span class="label label-rouded label-success">New</span></h3>
+                        <ul>
+                            <li>Open Setting.php File in includes folder.</li>
+                            <li>You can change mysqli variable if you want to integrate wchat with your website user table.
+                                <ul>
+                                    <li>So easy you can see in this screen shot</li>
+                                </ul>
+                            </li>
+                            <li class="p-t-10">All is done setting completed. click on frontend and enjoy with wchat</li>
+                        </ul>
+                        </p>
+
+                        <img src="images/docs/setting.jpg" alt="Install" class="img-responsive" />
+
+
+                        <hr>
+                        <p>
+                            <h3 class="box-title">Installation Guide</h3> First of all, copy <strong><i class="fa fa-folder text-warning"></i> demo</strong> folder and paste to your server/localhost.
+                            <br/><br/>
+                            <ul>
+                                <li>Run the wchat directory.</li>
+                                <li>It will redirect to <strong>/install</strong> directory.
+                                    <ul>
+                                        <li><strong>Step 1:</strong> Choose language. and click Next</li>
+                                        <li><strong>Step 2:</strong> Create a database with phpmyadmin.</li>
+                                        <li><strong>Step 3:</strong> Enter database dbhostname,dbusername,dbpassword,dbname. and click Next</li>
+                                        <li><strong>Step 4:</strong> Enter Admin login details. and click Next</li>
+                                    </ul>
+                                </li>
+                                <li class="p-t-10">All is done Installation completed. click on frontend and enjoy with wchat</li>
+                            </ul>
+                        </p>
+
+                        <img src="images/docs/install.jpg" alt="Install" class="img-responsive" />
+                        <hr>
+                        <h3 class="box-title">Template Structure</h3>
+                        <p>Theme based class of <code>.chat-main-box</code>, <code>.left</code> <code>.right</code></p> <img src="images/docs/template-structure.jpg" class="img-responsive hidden" />
+                        <hr>
+                        <h3 class="box-title">Beginig of page</h3>
+                        <p>Below code is used at the beginning of all HTML pages</p>
+                        <pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;meta name="description" content=""&gt;
+	&lt;meta name="author" content=""&gt;
+	&lt;link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png"&gt;
+	&lt;title&gt;Wchat - Responsive php ajax chat inbox messaging&lt;/title&gt;
+
+	&lt;!-- Bootstrap Core CSS --&gt;
+	&lt;link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+	&lt;!-- animation CSS --&gt;
+	&lt;link href="assets/css/animate.css" rel="stylesheet"&gt;
+
+	&lt;!-- Custom CSS --&gt;
+	&lt;link href="assets/css/screen.css" rel="stylesheet"&gt;
+
+        &lt;!-- Theme(light/dark) CSS --&gt;
+	&lt;link href="assets/css/style-light.css"  id="maintheme" rel="stylesheet"&gt;
+
+	&lt;!-- color CSS --&gt;
+	&lt;link href="assets/css/colors/default.css" id="theme"  rel="stylesheet"&gt;
+
+	&lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+	&lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+	&lt;!--[if lt IE 9]&gt;
+	    &lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;
+	    &lt;script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+&lt;/head&gt;
+            </pre>
+                        <hr>
+                        <h3 class="box-title">Preloader (Spinner)</h3>
+                        <p>Below code is used for loading spinner for the template, you can change spinner from spinner.css file</p>
+                        <img src="images/docs/spinner.jpg"/>
+                            <pre class="prettyprint"> &lt;!-- Preloader --&gt;
+&lt;div class="preloader"&gt;
+  &lt;div class="cssload-speeding-wheel"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                        <hr>
+                        <h3 class="box-title">Footer</h3>
+                        <p>Below code is used for Footer</p>
+                        <div class="row">
+
+                            <div class="col-md-8 col-sm-8">
+                                <pre class="prettyprint">
+                                    <img src="images/docs/footer-code.jpg" class="img-responsive" />
+                                </pre>
+                            </div>
+
+                        </div>
+                        <hr>
+
+
+
+
+                        <h3>Font family</h3>
+                        <p>Change the font family of whole template by simply change the google font link, just change in variable.less file</p>
+<pre class="prettyprint">
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,300,600,700);
+@basefont1:'Poppins', sans-serif;;
+</pre>
+                        <hr>
+                        <h3>Theme light or dark Css</h3>
+                        <p>We made 2 different css files for dayand night mode.</p>
+<pre class="prettyprint">
+style-light.light (this css is for light version)
+style-dark.light (this css is for dark version)
+</pre>
+                        <div class="alert alert-info"> Note: we recomonded you to please make your one own css and one own js files and add that in your page, so whenever the update of wchat comes it does not affect your code. </div>
+                        <hr>
+
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+            <!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h3 class="box-title" id="structure">Structure</h3> <pre>
+                <p>
+                    Wchat
+                    ├──
+                    │   └── assets/
+                    │       └── Bootstrap
+                    │            └── Bootstrap 3.3.6 files
+                    │       └── Css
+                    │            └── All Css files
+                    │       └── Js
+                    │            └── All Theme Js files
+                    │       └── Images
+                    │            └── Images files
+                    │
+                    │   └── Audio/
+                    │       └── Chat Notification Audio
+                    │   └── Chatjs/
+                    │       └── All Chat js files
+                    │   └── emotions-fb/
+                    │       └── All Smiley Images
+                    │   └── Install/
+                    │       └── Installtion Files
+                    │   └── Plugins/
+                    │       └── Plugin Files
+                    │   └── Storage/
+                    │       └── user_files
+                    │            └── Sent images and files
+                    │       └── user_images
+                    │            └── User Profile images
+                    │
+                    │   └── All Php Files
+                    └──
+                </p>
+              </pre> </div>
+                </div>
+            </div>
+            <!--/row-->
+            <!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h3 class="box-title" id="colors">For Colors</h3> Just replace the
+                        <br/>
+                        <br/> &lt;!-- color CSS --&gt;
+                        <br/> &lt;link href="assets/css/colors/default.css" id="theme" rel="stylesheet"&gt;
+                        <br/>
+                        <br/> &lt;link href="assets/css/colors/green.css" id="theme" rel="stylesheet"&gt;
+                        <br/>
+                        <br/> &lt;link href="assets/css/colors/gray.css" id="theme" rel="stylesheet"&gt;
+                        <br/>
+                        <br/> &lt;link href="assets/css/colors/blue.css" id="theme" rel="stylesheet"&gt;
+                        <br/>
+                        <br/> &lt;link href="assets/css/colors/purple.css" id="theme" rel="stylesheet"&gt;
+                        <br/>
+                        <br/> &lt;link href="assets/css/colors/megna.css" id="theme" rel="stylesheet"&gt;
+                        <h3 class="box-title m-t-40" id="colors">For Light or Dark Version</h3> just replace the
+                        <br/>
+                        <br/> &lt;!-- Theme Version CSS --&gt;
+                        <br/> &lt;link href="assets/css/style-light.css"  id="maintheme" rel="stylesheet"&gt;
+                        <br/>
+                        <br/> &lt;link href="assets/css/style-dark.css"  id="maintheme" rel="stylesheet"&gt;
+                        <br/>
+
+                        <br/> Thats it!!! </div>
+                </div>
+            </div>
+            <!--/row-->
+
+            <!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h3 class="box-title" id="js">Js Files</h3>
+                        <table class="table table-bordered m-0">
+                            <thead>
+                            <tr>
+                                <th style="width: 30%;">File</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><code>jquery.js</code>, <code>bootstrap.js</code>, <code>jquery.slimscroll</code> </td>
+                                <td> These files are used at main files of the theme. and nicescroll is for sidebarscroll </td>
+                            </tr>
+                            <tr>
+                                <td><code>assets/custom.js</code> </td>
+                                <td> This is a main function js file. it contain sidebar and other basic js</td>
+                            </tr>
+                            <tr>
+                                <td><code>chatjs/inbox.js, chatjs/custom.js</code> </td>
+                                <td> This is a main function js file. it contain chating process and other basic js</td>
+                            </tr>
+                            <tr>
+                                <td><code>chatjs/lightbox.js</code> </td>
+                                <td> This is for sent images showing in popup.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+
+            <!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h3 class="box-title" id="support">Support</h3>
+                        <p>If you need any help or feel any query don't hesitate just mail me (with licence key) on bylancertheme@gmail.com, i would love to help you, Once again thanks for the purchasing wchat script, i hope you enjoy it. Thanks</p>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!-- /.container-fluid -->
+        <footer class="footer text-center"> 2016 &copy; Wchat brought to you by Bylancer </footer>
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<!-- jQuery -->
+<script src="../code/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../code/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="../code/assets/js/custom.js"></script>
+</body>
+
+</html>

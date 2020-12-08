@@ -1,0 +1,91 @@
+
+body {
+    background: #fff;
+}
+body {
+    background: #f6f9fb;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    color: #686868;
+    font-weight: 300;
+}
+.container {
+    width: 1170px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+input[type=text],input[type=password] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #545658;
+    border: 2px solid #C9C9C9 !important;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 2px 2px 2px 2px;
+}
+input, textarea {
+    font: 14px/24px Helvetica, Arial, sans-serif;
+    color: #666;width: 300px;
+}
+td,th {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.style1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+.style2 {
+    color: #003366;
+    font-weight: bold;
+}
+.style5 {font-size: 9px}
+.style12 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+.style15 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; }
+
+.byMsg {
+    border: 2px solid #7d7d7d;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    padding: 10px 10px 10px 25px;
+    position: relative;
+    font-size: 13px;
+}
+.byMsgError {
+    border: 2px solid #d50000 !important;
+    color: #d50000;
+}
+.coffe.button {
+    background: #5bbc2e;
+}
+.coffe.button:hover {
+    background: #008329;
+}
+.button {
+    width: auto;
+    min-width: 100px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Ubuntu',sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 35px;
+    border: none;
+    border-radius: 2px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    text-decoration: none;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    border: none;
+}
+
